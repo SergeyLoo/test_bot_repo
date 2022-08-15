@@ -3,7 +3,7 @@
 
 import telebot;
 
-bot = telebot.TeleBot('5586138889:AAE8YoxT4pzI_NINMtQN3cP2QttnCU5Bg6k', parse_mode = None);
+bot = telebot.TeleBot('55586138889:AAE8YoxT4pzI_NINMtQN3cP2QttnCU5Bg6k', parse_mode = None);
 
 @bot.message_handler(content_types=['text'])
 def get_text_message(message):
