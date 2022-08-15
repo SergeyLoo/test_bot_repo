@@ -2,8 +2,9 @@
 # тестовый бот для студии танцев Soul Space
 
 import telebot;
+from settings import API_KEY
 
-bot = telebot.TeleBot('55586138889:AAE8YoxT4pzI_NINMtQN3cP2QttnCU5Bg6k', parse_mode = None);
+bot = telebot.TeleBot(API_KEY, parse_mode = None);
 
 @bot.message_handler(content_types=['text'])
 def get_text_message(message):
