@@ -1,10 +1,15 @@
 ﻿# This is a sample Python BOT.
 # тестовый бот для студии танцев Soul Space
 
-import telebot;
-from settings import API_KEY
+import os
 
-bot = telebot.TeleBot(API_KEY, parse_mode = None);
+import telebot
+
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
+
+bot = telebot.TeleBot(os.getenv('API_KEY'), parse_mode = None);
 
 @bot.message_handler(content_types=['text'])
 def get_text_message(message):
