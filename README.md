@@ -1,2 +1,2 @@
 # test_bot_repo
-repository for telegram bot
+repository for assembly, postgreSQL, go_server, nginx work together
